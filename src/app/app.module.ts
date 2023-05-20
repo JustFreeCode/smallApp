@@ -4,18 +4,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeBodyComponent } from './home-body/home-body.component';
+import { HomeBodyComponent } from './homeBody/home-body.component';
+import { AboutComponent } from './about/about.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomeBodyComponent
+    HomeBodyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot([ {
+      path : 'about',
+      component : AboutComponent,
+    },
+    {
+      path : 'home-body',
+      component : HomeBodyComponent,
+    },
+    {
+      path : '', redirectTo : '/home', pathMatch : 'full'
+    }])
   ],
   providers: [],
   bootstrap: [AppComponent]

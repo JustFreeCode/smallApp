@@ -1810,6 +1810,10 @@ hr {
   color: #000;
 }
 
+/* The above code is defining CSS styles for a class called "coming-soon". It sets the color to black
+(#000), adds padding of 120 pixels on the top and bottom, and sets a minimum height of 100% of the
+viewport height. This class can be applied to HTML elements to give them these styles. */
+
 .coming-soon {
   color: #000;
   padding: 120px 0;

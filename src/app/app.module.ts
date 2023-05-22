@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeBodyComponent } from './homeBody/home-body.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
+import { TeamComponent } from './team/team.component';
+import { Homepage2Component } from './homepage2/homepage2.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     HomeBodyComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent,
+    TeamComponent,
+    Homepage2Component
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,19 @@ import { RouterModule } from '@angular/router';
       component : AboutComponent,
     },
     {
-      path : 'home-body',
+      path : 'contact',
+      component : ContactComponent,
+    },
+    {
+      path : 'team',
+      component : TeamComponent,
+    },
+    {
+      path : 'homepage2',
+      component : Homepage2Component,
+    },
+    {
+      path : 'home',
       component : HomeBodyComponent,
     },
     {

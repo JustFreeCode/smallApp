@@ -1,5 +1,12 @@
 # AngularSmallApp
 
+Download the code and run using npm run start if you have installed npm.
+Oherwise, try ng serve
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
 ## Development server
